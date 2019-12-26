@@ -13,5 +13,7 @@ Instructions
 Discussion
 I used the following technologies: HTML, CSS, Javascript with React.
 
+A live version can be seen at https://codepen.io/IngaMM/full/aPLyQb
+
 Requirements
 npm, Browser
