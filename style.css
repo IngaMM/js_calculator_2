@@ -1,0 +1,112 @@
+#calculator {
+  width: 200px;
+  height: 300px;
+  font-size: 30px;
+  font-family: arial;
+  overflow: hidden;
+  padding: 0px;
+  margin: auto;
+}
+
+#button_container {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: 50px 50px 50px 50px 50px;
+}
+
+#display {
+  display: grid;
+  height: 50px;
+  background-color: grey;
+  color: white;
+  padding-left: 7px;
+  text-align: left;
+  align-content: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d3d3d3;
+}
+
+#clear {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#divide {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#multiply {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#subtract {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#add {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+#equals {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+#zero {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.operationButtons,
+#equals {
+  background-color: #ee7600;
+  color: white;
+  font-size: 30px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d3d3d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.operationButtons:active,
+#equal:active {
+  background-color: red;
+}
+
+.numberButtons,
+#clear {
+  background-color: #dcdcdc;
+  font-size: 30px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d3d3d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.numberButtons:active,
+#clear:active {
+  background-color: grey;
+}
